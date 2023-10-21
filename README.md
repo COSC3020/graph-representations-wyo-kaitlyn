@@ -16,7 +16,19 @@ depend on the number of vertices, the number of edges, or both?
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
 
+
+## Answer
+
+For the list to matrix, the function goes over every edge in the list to add 
+them to the matrix.  Therefore, the complexity should be $\Theta(|E|)$.
+
 ## Bonus
 
 Implement a function to convert an adjacency matrix to an adjacency list and
 analyze it as above.
+
+## Answer
+
+For the matrix to list, the function has to look at every vertice in order to tell
+if it is an edge, and add the edges to the new list.  Since the size of the matrix is
+|V| x |V|, the runtime will be $\Theta(|V^2|)$.
