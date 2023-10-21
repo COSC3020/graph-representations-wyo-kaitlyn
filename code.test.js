@@ -25,6 +25,8 @@ const test =
             list[i].sort(function(a, b) { return a - b; });
             list[i] = [...new Set(list[i])];
         }
-        return JSON.stringify(list) == JSON.stringify(convertToAdjList(mat));
+        //return JSON.stringify(list) == JSON.stringify(convertToAdjList(mat));
+        return JSON.stringify(mat) == JSON.stringify(convertToAdjMatrix(list));
     });
+
 jsc.assert(test, { tests: 1000 });
